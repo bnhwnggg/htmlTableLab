@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    
+    <div class="heading">
+    <h1> Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey</p>
+    </div>
+
+    <div class="body">
+
+    <!-- FORMMMMMMMMMMMMMMMMM -->
+    <form action="/submit-form" method="get"> 
+        <!--  -->
+        <div class="ageRange">
+            <label for="ageRange"> What is your age range? </label>
+            <div>
+                <select name="ageRange" id="">
+                    <option value="12-17">12-17</option>
+                    <option value="18-24">18-24</option>
+                    <option value="24+">25+</option>
+                </select>
+            </div>
+        </div>
+        <!--  -->
+        <div class="yearlyIncome">
+            <label for="yearlyIncome">What is your yearly income?</label>
+            <div>
+                <select name="incomeRange" id="">
+                    <option value="$0-$25000">$0-$25000</option>
+                    <option value="$25000+">$25000+</option>
+                </select>
+            </div>
+        </div>
+        <!--  -->
+        <div class="gender">
+            <label for="gender"> Gender </label>
+
+            <div>
+            <input id="maleRadio" type="radio" name="gender" value="Male">
+            <label for="maleRadio">Male</label>
+            </div>
+
+            <div>
+            <input id="femaleRadio" type="radio" name="gender" value="Female">
+            <label for="femaleRadio">Female</label>
+            </div>
+        </div>
+        <!--  -->
+        <div class="productLastPurchase2Months">
+            <label for="productLastPurchase2Months"> Which of the following products have you purchased in the last 2 months? Please check all that apply.</label>
+            <div>
+                <input type="checkbox" name="product" value="product1">Product 1
+                <!-- label for checkbox -->
+            </div>
+
+            <div>
+                <input type="checkbox" name="product" value="product2">Product 2
+            </div>
+
+            <div>
+                <input type="checkbox" name="product" value="product3">Product 3
+            </div>
+        </div>
+        <!--  -->
+        <div class="productUsageFrequency">
+            <label for="productUsageFrequency"> How often would you use our new product</label>?
+            
+            <div>
+                <input type="radio" name="productUsageFrequency" value="daily">Daily
+                <!-- label for text click function -->
+            </div>
+
+            <div>
+                <input type="radio" name="productUsageFrequency" value="weekly">Weekly
+            </div>
+
+            <div>
+                <input type="radio" name="productUsageFrequency" value="monthly">Monthly
+            </div>
+        </div>
+        <!--  -->
+        <div class="payEstimateForNewProduct">
+            <label for="payEstimateForNewProduct"> How much would you pay for our new product?</label>
+            <div>
+                $<input type="number" name="payEstimateDollar" placeholder="Dollars">.<input type="number" name="payEstimateCents" placeholder="Cents">
+            </div>
+        </div>
+        <!--  -->
+        <div class="featuresReccommendation">
+            <label for="featuresReccommendation">
+            What features would you like to see in the new product?</label>
+            
+            <div>
+                <textarea id="recommendation" name="featuresReccommendation" rows="6" cols="50" placeholder="Please enter here."></textarea>
+            </div>
+
+        </div>
+
+        <!-- table -->
+        <div class="table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Strongly Disagree</td>
+                        <td>Disagree</td>
+                        <td>Agree</td>
+                        <td>Strongly Agree</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Our products are priced fairly.</td>
+                        <td><input type="radio" name="pricedFairly">1</td>
+                        <td><input type="radio" name="pricedFairly">2</td>
+                        <td><input type="radio" name="pricedFairly">3</td>
+                        <td><input type="radio" name="pricedFairly">4</td>
+                    </tr>
+
+                    <tr>
+                        <td>Our products are high quality.</td>
+                        <td><input type="radio" name="productsQuality">1</td>
+                        <td><input type="radio" name="productsQuality">2</td>
+                        <td><input type="radio" name="productsQuality">3</td>
+                        <td><input type="radio" name="productsQuality">4</td>
+                    </tr>
+
+                    <tr>
+                        <td>You would recommend products to your friends? </td>
+                        <td><input type="radio" name="productsRecommendation">1</td>
+                        <td><input type="radio" name="productsRecommendation">2</td>
+                        <td><input type="radio" name="productsRecommendation">3</td>
+                        <td><input type="radio" name="productsRecommendation">4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <input type="submit"> <input type="reset">
+    </form>
+    </div>
+
+</body>
+</html>
